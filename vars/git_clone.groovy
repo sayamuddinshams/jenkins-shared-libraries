@@ -4,6 +4,6 @@ def call(String repoUrl, String branchName = "main") {
     
     // Jenkins pipeline step to clone the repo
     git url: repoUrl, branch: branchName
-    
+    echo 'Checkout stage finished.'
     echo "Code cloned successfully."
 }
